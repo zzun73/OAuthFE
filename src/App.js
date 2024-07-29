@@ -32,10 +32,10 @@ const onLogout = (setIsLoggedIn) => {
       localStorage.removeItem("accessToken");
 
       // 쿠키에서 리프레시 토큰 삭제
-      document.cookie =
-        "RefreshToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+      // document.cookie =
+      //   "RefreshToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
-      alert("로그아웃 성공");
+      // alert("로그아웃 성공");
       setIsLoggedIn(false);
     })
     .catch((error) => {
